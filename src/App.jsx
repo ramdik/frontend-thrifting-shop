@@ -1,14 +1,27 @@
-/* import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css' */
-import Login from "./pages/Login/Login"
+import { useEffect, useState } from "react"
+import Login from "./pages/Login/Login.jsx"
+import { getNewsList } from "./middlewares/get-api.js"
+import "./App.css"
 
 function App() {
-  //const [count, setCount] = useState(0)
+  //const [listNews, setListNews] = useState([])
+
+  useEffect(() => {
+    getNewsList()
+  }, [])
+
+  const ListNewsToday = () => {
+    return  (
+        <div className="News-wrapper" >
+          <div className="News-desc">uhuy</div>
+        </div>
+      )
+   
+  }
 
   return (
     <>
+      {/* <ListNewsToday /> */}
       <Login />
     </>
   )

@@ -1,10 +1,9 @@
 /* 
-THIS FILE ONLY FOR RESET CSS
+THIS FILE ONLY FOR RESET CSS AND SETTING GLOBAL CSS
 */
 
-body {
-  margin: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 
 /* Document
 * ========================================================================== */
@@ -60,6 +59,10 @@ word-break: break-word; /* 6 */
 
 body {
 margin: 0;
+padding: 0;
+font-family: 'Poppins', 'sans-serif';
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 /**
