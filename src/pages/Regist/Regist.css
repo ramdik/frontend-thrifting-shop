@@ -1,4 +1,4 @@
-.Login-container {
+.Regist-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f0f0",endColorstr="#ffffff",GradientType=1);
 }
 
-.Login-wrapper {
+.Regist-wrapper {
     width: 420px;
     background: transparent;
     color: #000000;
@@ -21,26 +21,26 @@
     backdrop-filter: blur(30px);
 }
 
-.Login-wrapper h1 {
+.Regist-wrapper h1 {
     font-size: 36px;
     text-align: center;
     color: #F03667;
 }
 
-.Login-wrapper h4 {
+.Regist-wrapper h4 {
     font-size: 15px;
     text-align: center;
     color: #000000;
 }
 
-.Login-wrapper .Login-input-box {
+.Regist-wrapper .Regist-input-box {
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
 }
 
-.Login-wrapper input {
+.Regist-wrapper input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -54,11 +54,11 @@
     background: #EEE;
 }
 
-.Login-wrapper input::placeholder {
+.Regist-wrapper input::placeholder {
     color: #000000;
 }
 
-.Login-input-box .icon {
+.Regist-input-box .icon {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -67,14 +67,14 @@
     color: #F03667;
 }
 
-.Login-signup {
+.Regist-signup {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1em;
 }
 
-.Login-signup button {
+.Regist-signup button {
     height: 45px;
     border: none;
     outline: none;
@@ -87,17 +87,18 @@
     font-weight: 300;
 }
 
-.Login-signup label {
+.Regist-signup label {
     text-align: center;
     font-size: .9em;
 }
 
-.Login-signup label p {
-    text-decoration: none;
+.Regist-signup label p {
     display: inline;
+    text-decoration: none;
+    color: #F03667;
 }
 
-.Login-signup label p:hover {
+.Regist-signup label p:hover {
     text-decoration: underline;
     color: blue;
     cursor: pointer;
