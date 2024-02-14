@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import './Login.css'
 import { FaUser, FaLock } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"
+import { LoginPage } from './LoginFromContext';
 
 
 const Login = () => {
@@ -14,7 +15,7 @@ const Login = () => {
                     <h1>Login</h1>
                     <h4>Please Enter Your Username, And Password</h4>
                     <div className="Login-input-box">
-                        <input type="text" name="username" id="username" placeholder='Username' required />
+                        <input type="text" name="username" id="username"  placeholder='Username' required />
                         <FaUser className='icon' />
                     </div>
                     <div className="Login-input-box">

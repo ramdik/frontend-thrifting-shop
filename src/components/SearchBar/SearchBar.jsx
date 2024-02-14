@@ -1,5 +1,3 @@
-// Masih Testing
-
 import { useEffect, useState } from "react"
 import { getProductList, searchProducts } from "../../middlewares/get-api"
 
