@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Login from "./pages/Login/Login.jsx"
 import Regist from "./pages/Regist/Regist.jsx"
-import SearchBar from "./components/SearchBar/SearchBar.jsx"
+import Home from "./pages/Home/Home.jsx"
 //import { getProductList } from "./middlewares/get-api.js"
 import "./App.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -27,7 +27,7 @@ function App() {
       {/* <ListNewsToday /> */}
       <Router>
         <Routes>
-        <Route path="/" element={<SearchBar />}></Route>
+        <Route path="/" element={<Home />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/sign-in" element={<Regist />}></Route>
         </Routes>

@@ -2,7 +2,6 @@ import { useState, useEffect, useContext } from 'react';
 import './Login.css'
 import { FaUser, FaLock } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"
-import { LoginPage } from './LoginFromContext';
 
 
 const Login = () => {

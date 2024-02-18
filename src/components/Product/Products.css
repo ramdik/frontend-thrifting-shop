@@ -1,0 +1,21 @@
+.Products-container {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 0;
+    margin-right: 0;
+    box-shadow: 0 5px 10px 1px #9b9b9b;
+}
+
+.col {
+    flex: 0;
+}
+
+.col:hover {
+    transform: translateY(-10px);
+    transition: 150ms ease-in;
+    transition-delay: 10ms;
+    cursor: pointer;
+}

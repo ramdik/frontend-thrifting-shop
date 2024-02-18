@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react"
 import { getProductList, searchProducts } from "../../middlewares/get-api"
+import CardProduct from "../Card/CardProduct"
+import productData from "../../middlewares/dummyApi"
+import './SearchBar.css'
 
 const SearchBar = () => {
 
-    const [thriftProducts, setThriftProducts] = useState()
+    /* const [thriftProducts, setThriftProducts] = useState()
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -19,7 +22,7 @@ const SearchBar = () => {
         
     },[])
 
-    console.log({thriftProducts: typeof(thriftProducts)})
+    console.log({thriftProducts: typeof(thriftProducts)}) */
 
     /* const ThriftProductList = () => {
         return thriftProducts.map((product, i) => {
@@ -32,18 +35,31 @@ const SearchBar = () => {
         })
     } */
 
-    const handleInputChange = (event) => {
+    /* const handleInputChange = (event) => {
         const { value } = event.target;
         search(value);
-    };
+    }; */
     return (
         <div className="SearchBar-wrapper">
-            <input 
-            type="text" 
-            placeholder="cari berita antara"
-            onChange={handleInputChange}
+            <input
+                type="text"
+                placeholder="cari berita antara"
+            //onChange={handleInputChange}
             />
             {/* <ThriftProductList /> */}
+            <div className="productData">
+                {console.log(productData.id)}
+                {productData.map(productData => {
+                    return (
+                        <CardProduct
+                            key={productData.id}
+                            image={productData.image}
+                            name={productData.name}
+                            price={productData.price}
+                        />
+                    )
+                })}
+            </div>
         </div>
     )
 }
