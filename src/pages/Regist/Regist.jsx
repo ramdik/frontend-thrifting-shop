@@ -11,7 +11,7 @@ const Regist = () => {
             <div className="Regist-wrapper">
 
                 <form action="">
-                    <h1>Sign In</h1>
+                    <h1>Register</h1>
                     <h4>Create Your Account</h4>
                     <div className="Regist-input-box">
                         <input type="email" name="email" id="email" placeholder='Email' required />
@@ -27,7 +27,7 @@ const Regist = () => {
                     </div>
 
                     <div className="Regist-signup">
-                        <button type='submit'>Sign In</button>
+                        <button type='submit'>Create Account</button>
                         <label>Already Have Account? <p onClick={() => navigate("/login")}>Login</p></label>
                     </div>
                 </form>

@@ -4,11 +4,11 @@ import productData from "../../middlewares/dummyApi"
 import "./Products.css"
 import { Row, Col, Container } from 'react-bootstrap'
 
- const Products = () => {
-  return (
-<Container fluid="md">
-        <Row className="Products-container">
-        {console.log(productData.id)}
+const Products = () => {
+    return (
+        <Container fluid="md">
+            <Row className="Products-container">
+                {console.log(productData.id)}
                 {productData.map(productData => {
                     return (
                         <Col className='pb-3'>
@@ -17,13 +17,13 @@ import { Row, Col, Container } from 'react-bootstrap'
                                 image={productData.image}
                                 name={productData.name}
                                 price={productData.price}
-                                />
+                            />
                         </Col>
                     )
                 })}
-        </Row>
-    </Container>
-  )
+            </Row>
+        </Container>
+    )
 }
 
 export default Products

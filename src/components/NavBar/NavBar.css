@@ -1,0 +1,38 @@
+.NavBar-container {
+    height: 4em;
+    background-color: #F13665;
+    box-shadow: 0 2px 8px 1px #9b9b9b;
+}
+
+.wrapper {
+    height: 100%;
+    padding-left: 15em;
+    padding-right: 15em;
+    justify-content: space-evenly;
+}
+
+label {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+    margin-right: 1em;
+    text-align: center;
+    color: aliceblue;
+}
+
+.Form {
+    padding: 1px;
+    border-radius: 5px;
+    border: 1px solid saddlebrown;
+    margin-right: 2em;
+    background-color: aliceblue;
+}
+
+#search {
+    max-width: 100%;
+}
+
+input::-webkit-search-decoration {
+    display: none;
+}
