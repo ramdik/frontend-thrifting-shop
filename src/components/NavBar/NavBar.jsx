@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Form, Row, Col, Container } from 'react-bootstrap'
+import { Form, Container } from 'react-bootstrap'
 import { FaCartPlus, FaSearch  } from "react-icons/fa";
 import { RxAvatar } from "react-icons/rx";
 import './NavBar.css'
@@ -9,7 +9,7 @@ const NavBar = () => {
         <Container fluid className='NavBar-container'>
             <div className="wrapper d-flex flex-row align-items-center">
                 <div className="label-container">
-                    <label className='flex-fill fs-3'>Thrifting Shop</label>
+                    <label className='NavBar-shop-name flex-fill fs-3'>Thrifting Shop</label>
                 </div>
                 <Form className="Form d-flex flex-fill align-items-center" style={{ width: "40%" }}>
                     <FaSearch 
@@ -33,17 +33,6 @@ const NavBar = () => {
                     style={{ fontSize: '3em', color: "white" }}
                 />
             </div>
-            {/* <Row>
-                <Col className='d-flex flex-column'>
-                </Col>
-                <Col>
-                </Col>
-                <Col md={"auto"}>
-                </Col>
-                <Col md={"auto"}>
-                </Col>
-            </Row> */}
-            {/* <Button variant="outline-success">Search</Button> */}
         </Container>
     )
 }

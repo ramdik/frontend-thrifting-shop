@@ -1,11 +1,60 @@
-footer {
+.Footer {
     background-color: #F13665;
+    height: 25vh;
 }
 
-h5 {
+.shop-name-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.shop-name {
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: bold;
     color: aliceblue;
+    width: max-content;
+}
+
+.shop-name:hover {
+    cursor: pointer;
+}
+
+.shop-name::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: aliceblue;
+    transition: 300ms;
+}
+  
+.shop-name:hover::after {
+    width: 100%;
+    cursor: pointer;
+}
+
+.Footer-login-btn {
+    width: max-content;
+}
+
+.Footer-login-btn:hover {
+    cursor: pointer;
+}
+
+.Footer-login-btn::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: aliceblue;
+    transition: 300ms;
+}
+  
+.Footer-login-btn:hover::after {
+    width: 100%;
+    cursor: pointer;
 }

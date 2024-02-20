@@ -11,7 +11,8 @@
     justify-content: space-evenly;
 }
 
-label {
+.NavBar-shop-name {
+    /* Add font family */
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
